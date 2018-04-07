@@ -82,13 +82,13 @@ class App extends Component {
 
   changeResolution(size) {
     switch (size) {
-      case 0:
+      case 'small':
         this.setState({
           rows: 10,
           cols: 20
         });
         break;
-      case 1:
+      case 'large':
         this.setState({
           rows: 50,
           cols: 70
@@ -121,6 +121,8 @@ class App extends Component {
           pause={this.pause}
           speedUp={this.speedUp}
           slowDown={this.slowDown}
+          populate={this.populate}
+          reset={this.reset}
           changeResolution={this.changeResolution} />
         <Grid rows={rows} cols={cols} liveOrDie={this.liveOrDie} grid={grid}/>
         <h2>Generations: {generation}</h2>

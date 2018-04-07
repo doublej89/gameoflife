@@ -2,4 +2,35 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url(/pink_dust.png);
 }
+
+.App {
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+  z-index: 5;
+}
+
+.control-buttons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.control-buttons ul li {
+  width: 150px;
+  text-align: center;
+  padding: 8px;
+  background-color: grey;
+  color: white;
+}
+
+.control-buttons ul li ul {
+  display: flex;
+  
+}
+
+
