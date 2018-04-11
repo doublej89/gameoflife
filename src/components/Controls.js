@@ -16,11 +16,11 @@ class Controls extends Component {
                     <li onClick={slowDown}>Slow Down</li>
                     <li onClick={populate}>Populate</li>
                     <li onClick={reset}>Reset</li>
-                    <li>Grid Size:
+                    <li id='dropdown-list'>Grid Size:
                         <ul>
-                            <li id='small' onClick={this.changeResolution}>Small</li>
-                            <li id='medium' onClick={this.changeResolution}>Medium</li>
-                            <li id='large' onClick={this.changeResolution}>Large</li>
+                            <li id='small' onClick={this.changeResolution.bind(this)}>Small</li>
+                            <li id='medium'onClick={this.changeResolution.bind(this)}>Medium</li>
+                            <li id='large'onClick={this.changeResolution.bind(this)}>Large</li>
                         </ul>
                     </li>
                 </ul>
@@ -28,3 +28,5 @@ class Controls extends Component {
         );
     }
 }
+
+export default Controls;

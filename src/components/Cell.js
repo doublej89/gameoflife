@@ -8,7 +8,7 @@ class Cell extends Component {
 
     render() {
         return (
-            <div className={this.props.cellStyle} onClick={this.liveOrDie}></div>
+            <div className={this.props.cellStyle} onClick={this.liveOrDie.bind(this)}></div>
         );
     }
 }
